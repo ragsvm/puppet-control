@@ -1,0 +1,12 @@
+---
+profile::apache::apache_vhost_servers: {
+
+  '1-ip-172-31-12-123.ap-south-1.compute.internal':{
+     port: 80,
+     docroot: '/var/www/web1'
+   },
+  '2-ip-172-31-12-123.ap-south-1.compute.internal':{
+     port: 80,
+     docroot: '/var/www/web2'
+   },
+}
