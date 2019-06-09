@@ -29,3 +29,6 @@ mod 'profile',
 mod 'role',
  :git => 'https://github.com/ragsvm/204-role.git',
  :ref => 'master'
+mod 'nginx',
+ :git => 'https://github.com/ragsvm/puppet-nginx',
+ :ref => 'master'
