@@ -32,7 +32,7 @@ File { backup => false }
 
 #node 'ip-172-31-27-150.ap-south-1.compute.internal' {
 node 'ip-172-31-27-245.ap-south-1' {
-  notify {'matched the chopped hostname'}
+  notify {'matched the chopped hostname':}
   include pe_repo::platform::el_6_x86_64
   include pe_repo::platform::ubuntu_1404_amd64
 }
