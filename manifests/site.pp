@@ -12,7 +12,6 @@
 ## Active Configurations ##
 
 # Disable filebucket by default for all File resources:
-#https://docs.puppet.com/pe/2015.3/release_notes.html#filebucket-resource-no-longer-created-by-default
 File { backup => false }
 
 # DEFAULT NODE
@@ -24,6 +23,26 @@ File { backup => false }
 # definition. If there are no other nodes in this file, classes declared here
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
+
+#node 'ip-172-31-27-245' {
+
+# include ntp
+
+#}
+
+#node 'ip-172-31-27-150.ap-south-1.compute.internal' {
+node 'ip-172-31-27-245.ap-south-1' {
+  notify {'matched the chopped hostname'}
+  include pe_repo::platform::el_6_x86_64
+  include pe_repo::platform::ubuntu_1404_amd64
+}
+
+#node /^ip-172-31/ {
+
+ #notify {'I am regex baby':}
+# include ntp
+#}
+
 
 node default {
   # This is where you can declare classes for all nodes.
