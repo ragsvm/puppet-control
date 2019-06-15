@@ -1,10 +1,10 @@
 ---
-  profile::nginx::vhosts:
-    - 'fqdn'  : 'prxy1.rags.com'
-      'port' : '80'
-      'server_aliases' : ''
-    - 'fqdn'  : 'prxy2.rags.com'
-      'port' : '80
-      'server_aliases' : 'prxy.fuckall.com'
-  classes:
-    - profile::nginx
+profile::nginx::vhosts:
+  - 'fqdn'  : 'prxy1.rags.com'
+    'port' : '80'
+    'server_aliases' : ''
+  - 'fqdn'  : 'prxy2.rags.com'
+    'port' : '80
+    'server_aliases' : 'prxy.fuckall.com'
+classes:
+  - profile::nginx
