@@ -10,3 +10,5 @@ profile::apache::apache_vhost_servers: {
      docroot: '/var/www/web2'
    },
 }
+classes:
+  -profile::nginx
