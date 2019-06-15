@@ -11,4 +11,4 @@ profile::apache::apache_vhost_servers: {
    },
 }
 classes:
-  -profile::nginx
+  - profile::nginx
