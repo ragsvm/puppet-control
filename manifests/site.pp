@@ -30,6 +30,12 @@ File { backup => false }
 
 #}
 
+node 'ip-172-31-12-123' {
+  notify {'centosnode':
+   message => 'This is ip-172-31-12-123 using a node def in sitepp'
+  }
+}
+
 #node 'ip-172-31-27-150.ap-south-1.compute.internal' {
 node 'ip-172-31-27-245.ap-south-1' {
   notify {'matched the chopped hostname':}
