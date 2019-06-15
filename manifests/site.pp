@@ -15,4 +15,6 @@ node default {
    message => 'Matched the Hiera_include'
 
   }
+
+  hiera_include('classes')
 }
