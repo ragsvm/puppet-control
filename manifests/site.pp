@@ -10,4 +10,9 @@ node 'ip-172-31-27-245.ap-south-1' {
   include pe_repo::platform::ubuntu_1404_amd64
 }
 node default {
+  notify {'Hiera_include':
+
+   message => 'Matched the Hiera_include'
+
+  }
 }
